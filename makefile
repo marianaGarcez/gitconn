@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS= -lpq
 DEPS =  
-OBJ = connection.o 
+OBJ = 
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
