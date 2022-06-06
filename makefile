@@ -1,7 +1,7 @@
 CC=gcc
-CFLAGS= -lpq
+CFLAGS=
 DEPS =  
-OBJ = 
+OBJ = main.o
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
