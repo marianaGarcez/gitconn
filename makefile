@@ -1,6 +1,7 @@
 CC=gcc
-CFLAGS=
+CFLAGS= -lpq
 DEPS =  
+CPPFLAGS += -I/usr/local/pgsql/include
 OBJ = main.o
 
 %.o: %.c $(DEPS)
