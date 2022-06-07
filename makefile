@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS= -lpq
+CFLAGS= 
 DEPS =  
 CPPFLAGS += -I/usr/local/pgsql/include
 OBJ = main.o
