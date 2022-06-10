@@ -14,5 +14,5 @@ echo $USER : $psw
 
 echo $psw | sudo -S ls
 
-sudo -u postgres psql
-
+sudo -u postgres psql  < program.txt 
+#psql postgres < program.txt 
